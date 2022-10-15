@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+</head>
+
+<body style="margin: 5px 0px;">
+    <div style="border: 2px solid #000; min-width: 32px; min-height: 240px; border-radius: 24px; padding: 12px 20px; position:fixed; margin-left: calc(100% / 2 - 1024px / 2 - 32px * 3); margin-top: 100px;">
+        <input type="range" id="brush_size" name="brush_size" style="transform: rotateZ(90deg); position: absolute; margin-left: -60px; margin-top: 140px;" min="1" max="100">
+        <button id="reset">Reset</button><br><br>
+        <button id="save">Save</button>
+    </div>
+    <center>
+        <canvas id="paint_canvas" width="1024" height="768" style="border: 2px solid #000; cursor:crosshair; "></canvas> <br>
+        <br>
+        <div style="border: 2px solid #000; max-width: 900px; max-height: 32px; border-radius: 24px; text-align: left; padding: 12px 20px; display: inline-block;">
+            <div id="colors" style="display: inline-block;">
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: red;" id="red"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: blue;" id="blue"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: pink;" id="pink"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: slateblue;" id="slateblue"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: seagreen;" id="seagreen"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: black;" id="black"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: aqua;" id="aqua"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: white;" id="white"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: purple;" id="purple"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: palegreen;" id="palegreen"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: peru;" id="brown"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: antiquewhite;" id="antiquewhite"></div>
+                <div style="border: 1px solid #000; margin-right: -5px; width: 32px; height: 32px; display: inline-block; background-color: #ff8800;" id="orange"></div>
+            </div>
+        </div>
+    </center>
+    <script src="paint-canvas.js "></script>
+</body>
+
+</html>
